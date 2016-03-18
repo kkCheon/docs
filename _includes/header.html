@@ -1,27 +1,62 @@
-<header class="site-header">
-
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+<header>
+    <!-- type 2 -->
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <!-- 네비게이션 로고 이미지 -->
+              <a href="{{ site.baseurl }}/start"><img class="logo" src="https://go.toss.im/framework-bt/assets/images/icon-bi-toss-blue.png"></a>
+              <!-- 네비게이션 메뉴 --> 
+              <ul class="nav-menu">
+                
+                <a href="{{ site.baseurl }}/start" class="nav-btn btn-tint-type2 pull-right">시작하기</a>
+                <a href="https://github.com/kkCheon/tossframe.git"><li class="pull-right"><span class="bold">Github</span> 저장소</li></a>
+                <a href="{{ site.baseurl }}/grid/"><li class="pull-right"><span class="bold">CSS</span> 문서</li></a>
+                <!-- <a href="#"><li class="pull-right bold">About</li></a> -->
+                
+              </ul>
+              <!-- 모바일 햄버거 메뉴 버튼 -->
+              <a class="nav-menu-btn-mb" href="#">
+                <div id="nav-icon4">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                
+              </a>
+          </div>
+        </div>
       </div>
     </nav>
+    <div class="nav-menu-dropdown-mb">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="">
+                <a href=""><li>송금</li></a>
+                <a href="https://www.facebook.com/toss.revolution/videos/915742201878036/"><li>돈 받기</li></a>
+              </ul>
+            </div>
+            <div class="global-menu">
+            
+              <div class="col-xs-6">
+                <a href=""><li>토스</li></a>
+              </div>
+              <div class="col-xs-6">
+                <a href="https://toss.im/pay"><li>비즈니스</li></a>
+              </div>
+              <div class="col-xs-6">
+                <a href="https://toss.im/toss/team"><li>팀</li></a>
+              </div>
+              <div class="col-xs-6">
+                <a href="https://toss.im/faq"><li>고객센터</li></a>
+              </div>
+            
+            </div>
+          </div>
+      </div>
+    </div>
 
-  </div>
 
-</header>
+    <div class="nav-menu-cover"></div>
+    </header

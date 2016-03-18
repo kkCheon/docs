@@ -20,6 +20,9 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-baseurl: /docs
+baseurl: "/docs/start/"
 
 port: 1040
+
+gems:
+  - example
